@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'RocknRoll'; 
+    src: url(img/rocknroll_typo_crazy.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'TheDark'; 
+    src: url(img/TheDark.ttf) format('truetype');
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+
+  /* J'ai pris la liberté de laisser l'image de fond en forme d'éclair */
+  body {
+    background: linear-gradient(
+      115deg,
+      black 33.33%,
+      red 33.33%,
+      red 66.66%,
+      black 66.66%
+    );
+    background-size: cover;
+  }
+
+
+  .navbar-custom {
+    background-color: black;
+    width: 70%;
+  }
+
+  .navbar-custom .nav-link {
+    color: red;
+    font-family: 'TheDark', sans-serif;
+    font-size: 1.4rem;
+    background-color: black;
+  }
+
+  .navbar-custom .nav-item {
+    background-color: black; 
+  }
+
+  
+  .navbar-custom .navbar-nav {
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .navbar-custom .navbar-brand h1 {
+    font-family: 'TheDark', sans-serif;
+    font-size: 2.0rem; 
+  }
+
+
+  .carousel {
+    height: 100%; 
+  }
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item img {
+    height: 100%; 
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .member-title {
+    font-family: 'TheDark', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .member {
+    text-align: center;
+  }
+
+  .member img {
+    border: 2px solid white;
+    height: 200px; 
+    width: auto; 
+    justify-content: space-around;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* J'ai pris l'initiative d'ajouter un effet de hover sur les photos des membres */
+
+  .member img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .discography-title {
+    font-family: 'TheDark', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .concerts-title {
+    font-family: 'TheDark', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-title {
+    font-family: 'TheDark', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  /* police d'écriture rocknroll pour les button */
+  .btn-custom-font{
+    font-family: 'RocknRoll', sans-serif;
+  }
+
+  /* Empêche le changement de taille de la boite à message */
+  #inputMessage {
+    resize: none;
+  }
+
+ 
+/* Police d'écriture du formuaire de contact */
+  .form-group {
+    font-family: 'TheDark', sans-serif;
+  }
+
+/* 
+  J'ai fait cela pour forcer la couleur rouge du placeholder */
+  #inputName::placeholder,
+  #inputFirstName::placeholder,
+  #inputEmail::placeholder,
+  #inputMessage::placeholder {
+    color: red;
+    opacity: 1; 
+  }
+
+/* couleur de l'éclair du logo AC*DC */
+.bolt {
+    font-size: 48px;
+          color: red;
+           -webkit-text-stroke: 1px black;
+          } 
